@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 1920px;
+    text-align: center;
+    padding-top: 35px;
+    height: fit-content;
+}
+
+.title {
+    width: 500px;
+    margin: 0 auto;
+}
+
+#logo img {
+    margin-left: 211px;
+}
+
+.title a {
+    text-decoration: none;
+}
+
+@media (max-width:480px) {
+    .title {
+        width: 300px;
+    }
+    #logo img {
+        margin-left: 111px;
+    }
+}
+
+h1 {
+    font-size: 48px;
+    color: rgb(142, 67, 146);
+    line-height: 24px;
+    font-family: monoton;
+    font-weight: 900;
+}
+
+h2 {
+    color: rgb(142, 67, 146);
+}
+
+h3 {
+    color: rgb(144, 115, 121);
+    margin-top: 35px;
+    font-size: 20px;
+}
+
+h3 a {
+    text-decoration: none;
+    color: rgb(255, 106, 0);
+}
+
+h4 {
+    font-size: 17px;
+    color: rgb(142, 67, 146);
+}
+
+#signUpLink {
+    font-size: 17px;
+    color: rgb(144, 115, 121);
+}
+
+#signUpLink a {
+    text-decoration: none;
+    color: rgb(255, 106, 0);
+}
+
+h5 {
+    color: rgb(142, 67, 146);
+}
+
+h6 {
+    font-size: 14px;
+    color: rgb(93, 74, 78);
+}
+
+h6 a {
+    text-decoration: none;
+    color: rgb(255, 106, 0);
+}
+
+#signUpBox {
+    box-shadow: 1px 1px 10px 2px rgb(177, 177, 177);
+    background-color: white;
+    height: 260px;
+    width: 360px;
+    border-radius: 8px;
+    margin: 0 auto;
+    border-style: outset;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#signUpBox1 {
+    box-shadow: 1px 1px 10px 2px rgb(177, 177, 177);
+    background-color: white;
+    height: 160px;
+    width: 360px;
+    border-radius: 8px;
+    margin: 0 auto;
+    border-style: outset;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#signUpBox a {
+    text-decoration: none;
+}
+
+.signUpEmail {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(144, 115, 121);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.signUpEmail p {
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.signUpEmail img {
+    padding-top: 1px;
+}
+
+.emailIcon {
+    border-right: solid 2px white;
+    padding-right: 10px;
+}
+
+#member {
+    margin-top: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    box-shadow: 2px 2px 12px 0px rgb(127, 126, 126);
+    background-color: white;
+    padding-top: 17px;
+    padding-bottom: 6px;
+    padding-right: 15px;
+    clear: both;
+    width: 100%;
+    margin-top: 105px;
+}
+
+footer p {
+    color: rgb(142, 67, 146);
+    font-size: 16px;
+    padding-bottom: 12px;
+    font-family: monoton;
+}
+
+#copyRight {
+    font-weight: bold;
+}
+
+@media (max-width:480px) {
+    #copyRight {
+        font-size: 14px;
+        padding-bottom: 8px;
+    }
+}
+
+#email {
+    padding: 8px;
+    font-size: 16px;
+}
+
+#submitButton {
+    margin-left: -4px;
+    padding: 9px;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-size: 17px;
+    font-weight: bolder;
+    background-color: rgb(255, 106, 0);
+    color: white;
+    border-style: none;
+}
+
+#postButton {
+    text-decoration: none;
+    background-color: rgb(255, 94, 0);
+    color: white;
+    font-size: 19px;
+    padding: 7px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-width: 3px;
+    border-style: outset;
+    border-color: rgb(255, 94, 0);
+    margin-top: 20px;
+}
+
+#postButton:hover {
+    background-color: #ccc;
+    color: rgb(95, 44, 98);
+    border-color: rgb(142, 67, 146);
+    cursor: pointer;
+}
+
+#footerContCreated {
+    position: fixed;
+    top: bottom;
+    width: 100%;
+    left: 0;
+    margin-top: 300px;
+}

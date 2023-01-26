@@ -1,0 +1,177 @@
+/* Contact css */
+
+body {
+    background: none;
+}
+
+#mainContact {
+    
+    padding-top: 0;
+    font-size: 40px;
+    background-size: 24px 24px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+#contactForm {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: monoton;
+}
+
+#contactForm form {
+    padding: 40px 100px;
+    padding-bottom: 50px;
+    border: 1px solid rgb(186, 85, 211);
+    border-radius: 5px;
+    background-clip: padding-box;
+    background: rgb(165, 98, 139);
+    box-shadow: 2px 2px 12px 0px rgb(127, 126, 126);
+    overflow: hidden;
+    border-radius: 22px;
+    height: 550px;
+}
+
+#contactForm textarea {
+    font-family: monoton;
+    background: scroll 16px 16px;
+    width: 404px;
+    height: 120px;
+    border: 1px solid rgba(255, 255, 255, .6);
+    border-radius: 4px;
+    background-clip: padding-box;
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+#contactForm input {
+    width: 276px;
+    height: 48px;
+    border: 1px solid;
+    border-radius: 4px;
+    background-clip: padding-box;
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    font-family: monoton;
+}
+
+#contactForm input[type=submit] {
+    cursor: pointer;
+    font-size: 18px;
+    font-family: monoton;
+}
+
+#contactForm input.name {
+    background: rgb(74, 32, 76) scroll 16px 16px;
+}
+
+#contactForm input.email {
+    background: rgb(74, 32, 76) scroll 16px 20px;
+}
+
+#contactForm textarea.message {
+    background: rgb(74, 32, 76) scroll 16px 16px;
+    font-size: 18px;
+    font-family: monoton;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#contactForm ::-webkit-input-placeholder {
+    color: white;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    background-color: #6c4f70;
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, .5);
+    overflow: hidden;
+}
+
+#contactForm .btn {
+    width: 138px;
+    height: 44px;
+    border-radius: 4px;
+    float: right;
+    border: 1px solid #253737;
+    background: rgb(74, 32, 76);
+    background: -ms-linear-gradient(top, #6da5a3, #416b68);
+    background-image: -ms-linear-gradient(top, #6da5a3 0%, #416b68 100%);
+    padding: 10.5px 21px;
+    border-radius: 6px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
+    text-shadow: rgba(255, 255, 255, .5) 0 1px 0;
+    color: white;
+    font-family: monoton;
+}
+
+#contactForm .btn:hover {
+    border: 1px solid #253737;
+    text-shadow: #333333 0 1px 0;
+    background: rgb(255, 94, 0);
+    background-image: -ms-linear-gradient(top, #77b2b0 0%, #416b68 100%);
+    color: #fff;
+}
+
+#contactForm .btn:active {
+    margin-top: 1px;
+    text-shadow: #333333 0 -1px 0;
+    border: 1px solid #253737;
+    color: rgb(255, 196, 0);
+    box-shadow: rgba(255, 255, 255, 0) 0 1px 0, inset rgba(255, 255, 255, 0.7) 0 1px 0;
+}
+@media (max-width: 500px) {
+    #contactForm form {
+        padding: 20px 40px;}
+    #contactForm input{
+        width: 176px;
+    height: 38px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+    }
+}
+iframe {
+    filter: grayscale(50%) brightness(90%) hue-rotate(-100deg) contrast(1) invert();
+    border-radius: 22px;
+    margin-right: 40px;
+    box-shadow: 2px 2px 12px 0px rgb(127, 126, 126);
+    margin-left: 40px;
+}
+
+iframe:hover {
+    filter: initial;
+    box-shadow: 2px 2px 12px 0px rgb(127, 126, 126);
+}
+
+#contactForm h6 {
+    color: white;
+    padding-bottom: 20px;
+    text-align: left;
+    font-family: monoton;
+    font-size: 22px;
+}
+
+#userMSG {
+    padding: 5px;
+    color: white;
+}
+
+.alert{
+    font-size: 20px;
+    color: rgb(124, 54, 128);
+    font-weight: bold;
+    font-family: monoton;
+}

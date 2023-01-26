@@ -1,0 +1,2642 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1920px;
+    text-align: center;
+
+}
+
+header {
+    box-shadow: 2px 2px 12px 0px rgb(127, 126, 126);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.titleNav {
+    max-width: 960px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.logo img {
+    padding: 5px;
+}
+
+nav {
+    padding-top: 5px;
+    position: relative;
+}
+
+#menu {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.searchBar {
+    position: absolute;
+    background-color: white;
+    width: 350px;
+    height: 40px;
+    top: 0px;
+    left: -500px;
+    color: rgb(142, 67, 146);
+    visibility: hidden;
+}
+
+#myInput {
+    width: 280px;
+    padding: 5px 10px;
+    box-shadow: 2px 2px 12px 0px rgb(127, 126, 126);
+    border-color: rgb(127, 126, 126);
+    border-width: 1px;
+    border-style: solid;
+}
+
+.searchBar span {
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+.appear {
+    visibility: visible;
+}
+
+.searchBar img {
+    display: inline-block;
+    position: absolute;
+    top: 32px;
+    right: 220px;
+}
+
+nav ul li {
+    margin: 8px;
+    padding: 2px;
+    background-color: white;
+    border-radius: 7px;
+    border-style: outset;
+    border-width: 2px;
+}
+
+nav ul li {
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+nav ul li:hover {
+    transform: scale(0.9);
+    transition: 0.2s;
+}
+
+.hovertext {
+    position: relative;
+}
+
+.hovertext:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: fit-content;
+    background-color: white;
+    border-width: 1px;
+    border-style: inset;
+    border-color: rgb(142, 67, 146);
+    color: rgb(142, 67, 146);
+    font-weight: 900;
+    text-align: center;
+    border-radius: 5px;
+    padding: 1px 2px;
+    transition: opacity 0.2s ease-in-out;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 110%;
+    font-size: 15px;
+}
+
+.hovertext:hover:before {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width: 600px) {
+    header {
+        max-width: 600px;
+    }
+
+    .titleNav {
+        max-width: 580px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    header {
+        max-width: 480px;
+    }
+
+    .titleNav {
+        max-width: 460px;
+    }
+
+    .logo img {
+        margin-top: 4px;
+        width: 45px;
+    }
+
+    li a img {
+        width: 28px;
+    }
+
+    .search-icon img {
+        width: 28px;
+    }
+
+    nav ul li {
+        margin: 3px;
+    }
+}
+
+@media (max-width: 400px) {
+    header {
+        max-width: 400px;
+    }
+
+    .titleNav {
+        max-width: 400px;
+    }
+
+    .logo img {
+        margin-top: 4px;
+        width: 45px;
+    }
+
+    li a img {
+        width: 28px;
+    }
+
+    .search-icon img {
+        width: 28px;
+    }
+
+    nav ul li {
+        margin: 3px;
+    }
+}
+
+@media (max-width: 300px) {
+    header {
+        max-width: 300px;
+    }
+
+    .titleNav {
+        max-width: 300px;
+    }
+
+    .logo img {
+        margin-top: 4px;
+        width: 45px;
+    }
+
+    li a img {
+        width: 28px;
+    }
+
+    .search-icon img {
+        width: 28px;
+    }
+
+    nav ul li {
+        margin: 3px;
+    }
+}
+
+/* main section */
+
+main {
+    min-height: 560px;
+    margin-top: 70px;
+}
+
+/* Section 1 (write post)*/
+
+#section1 {
+    max-width: 680px;
+    height: 150px;
+    background-color: #eeecec;
+    text-align: justify;
+    position: relative;
+    margin: 0 auto;
+}
+
+.btnAddPhotos {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 110px;
+    position: absolute;
+    right: 50px;
+    height: 25px;
+    top: 2px;
+    background-color: #eeecec;
+    color: rgb(136, 13, 108);
+}
+
+#avatar {
+    position: absolute;
+    left: 3.5px;
+    top: 3.5px;
+    padding: 3px;
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(136, 13, 108);
+    border-radius: 8px;
+}
+
+#avatar:hover {
+    background-color: rgb(136, 13, 108);
+    color: #eeecec;
+    cursor: pointer;
+
+}
+
+#post-image {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    padding: 3px;
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(136, 13, 108);
+    opacity: 0.8;
+    width: 110px;
+    height: 33px;
+}
+
+#post-image:hover {
+    background-color: rgb(136, 13, 108);
+    color: #eeecec;
+    cursor: pointer;
+    border-color: rgb(214, 199, 212);
+    border-style: ridge;
+    border-width: 2px;
+
+}
+
+.avatar {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    padding: 3px;
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(136, 13, 108);
+}
+
+.avatar:hover {
+    background-color: rgb(136, 13, 108);
+    color: #eeecec;
+    cursor: pointer;
+    border-color: rgb(214, 199, 212);
+    border-style: ridge;
+    border-width: 2px;
+    font-size: 16px;
+}
+
+form {
+    width: 606px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+#postButton {
+    background: linear-gradient(90deg, rgb(143, 2, 129) 0%, #bd68b3 45%, #e5da8c 100%);
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 16px;
+    border-color: white;
+    border-style: ridge;
+    position: absolute;
+    right: 0;
+}
+
+@media (max-width: 400px) {
+    #postButton {
+        padding: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+    }
+
+}
+
+#postButton:hover {
+    background: linear-gradient(90deg, #e5da8c 0%, #bd68b3 45%, rgb(143, 2, 129) 100%);
+    cursor: pointer;
+}
+
+#postContent {
+    border-color: #8a417f;
+}
+
+form a {
+    color: #e5da8c;
+    position: absolute;
+    left: 0;
+    top: 120px;
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(136, 13, 108);
+}
+
+form a img {
+    display: inline;
+}
+
+@media (max-width: 480px) {
+    form a {
+        font-size: 14px;
+    }
+
+}
+
+/* Section Extended Menu */
+
+.extendedMenu {
+    position: fixed;
+    right: 0;
+    width: 240px;
+    height: fit-content;
+    top: 90px;
+    box-shadow: 2px 2px 12px 0px rgb(127, 126, 126);
+    display: none;
+}
+
+.extendedMenu1 {
+    position: absolute;
+    right: 40px;
+    width: 240px;
+    height: fit-content;
+    box-shadow: 2px 2px 12px 0px rgb(127, 126, 126);
+    display: none;
+}
+
+.list-group.panel>.list-group-item {
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+.accordion {
+    background-color: #eeecec;
+    color: rgb(136, 13, 108);
+    cursor: pointer;
+    padding: 10px;
+    padding-left: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: none;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+.active,
+.accordion:hover {
+    background: linear-gradient(90deg, rgb(143, 2, 129) 0%, #bd68b3 45%, #e5da8c 100%);
+    color: white;
+}
+
+
+/* Style the accordion panel. Note: hidden by default */
+
+.panel {
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    text-align: left;
+}
+
+.panel p {
+    padding: 0px 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    color: rgb(143, 2, 129);
+    text-decoration: none;
+}
+
+.panel a {
+    text-decoration: none;
+
+}
+
+.panel p:hover {
+    background-color: rgb(143, 2, 129);
+    color: white;
+}
+
+.logout {
+    display: block;
+    font-size: 17px;
+    border-color: none;
+    background-color: rgb(162, 35, 150);
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    border-color: white;
+    border-style: ridge;
+    text-decoration: none;
+    width: auto;
+}
+
+.logout:hover {
+    background-color: #f7f1c7;
+    color: rgb(143, 2, 129);
+    font-weight: 900;
+}
+
+.extendedMenu a button {
+    background-color: #eeecec;
+    color: rgb(136, 13, 108);
+}
+
+.extendedMenu a button:hover {
+    background: linear-gradient(90deg, rgb(143, 2, 129) 0%, #bd68b3 45%, #e5da8c 100%);
+    color: white;
+}
+
+
+/* Section 2 (Show posts and comments)*/
+
+#section2 {
+    max-width: 960px;
+    height: fit-content;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.posts {
+    max-width: 960px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-family: 'IBM Plex Serif', serif;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.postsMessages {
+    max-width: 960px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-family: 'IBM Plex Serif', serif;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+.allUsers {
+    max-width: 960px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-family: 'IBM Plex Serif', serif;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.photoPost {
+    width: 200px;
+    height: 200px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #c3c1c1;
+    padding: 4px;
+    position: relative;
+    margin-right: 50px;
+    margin-top: 0px;
+    border-radius: 7px;
+}
+
+.photoPosts {
+    width: 168px;
+    height: 168px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #c3c1c1;
+    padding: 4px;
+    position: relative;
+    margin-right: 50px;
+    border-radius: 8px;
+}
+
+#imageForm {
+    margin-top: -30px;
+
+}
+
+#change_image {
+    z-index: 1;
+    position: absolute;
+    left: 3.5px;
+    top: 3.5px;
+    padding: 3px;
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(136, 13, 108);
+    border-radius: 8px;
+
+}
+
+.postBox {
+    width: 710px;
+    background-color: white;
+}
+
+.postBox2 {
+    margin-top: 0px;
+    width: 510px;
+    margin-left: 30px;
+    margin-top: -3px;
+
+}
+
+.postBox3 {
+    margin-top: 0px;
+    width: 510px;
+    margin-right: 30px;
+    margin-top: -3px;
+}
+
+.text1 {
+    max-width: 510px;
+    min-height: 60px;
+    font-size: 17px;
+    color: #5b4c5f;
+    padding-top: 0px;
+    margin-bottom: -17px;
+    margin-left: 0px;
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+.text2 {
+    width: 510px;
+    min-height: 60px;
+    font-size: 17px;
+    color: #5b4c5f;
+    padding-top: 0px;
+    margin-bottom: -17px;
+    margin-left: 0px;
+    text-align: end;
+}
+
+.userPost {
+    font-size: 19px;
+    font-weight: bold;
+    padding: 5px;
+    max-width: 710px;
+    padding-left: 0;
+    color: #885b81;
+    padding-top: 0px;
+
+}
+
+.country {
+    font-size: 17px;
+    padding: 5px;
+    width: fit-content;
+    padding-left: 0;
+    padding-top: 0;
+    color: #5b4c5f;
+    padding-bottom: 0;
+}
+
+.userName {
+    font-size: 21px;
+    padding: 5px;
+    width: fit-content;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+
+.text {
+    width: 710px;
+    min-height: 60px;
+    font-size: 17px;
+    color: #5b4c5f;
+    padding-top: 20px;
+    line-height: 24px;
+}
+
+#voidMsg {
+    width: 900px;
+    text-align: center;
+    color: orangered;
+}
+
+.time {
+    color: #873e7c;
+    padding: 20px;
+    padding-left: 0;
+}
+
+.time1 {
+    color: #873e7c;
+    padding: 20px;
+    padding-left: 0;
+    text-align: justify;
+}
+
+.time2 {
+    color: #873e7c;
+    padding: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: right;
+}
+
+.time3 {
+    color: #873e7c;
+    padding: 20px;
+    padding-left: 0;
+    padding-top: 10px;
+}
+
+.seeComm {
+    padding-bottom: 20px;
+}
+
+.seeComm a {
+    text-decoration: none;
+}
+
+.seeComm:hover {
+    cursor: pointer;
+}
+
+.image img {
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+.commentBox {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 710px;
+    padding-bottom: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #b7b6b6;
+    border-radius: 5px;
+}
+
+.imageComment {
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 55px;
+    height: 55px;
+    border-width: 4px;
+    border-style: ridge;
+    border-color: #eeecec;
+}
+
+.comments {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: -10px;
+    padding-right: 8px;
+}
+
+.comment {
+    width: 560px;
+    margin-right: -10px;
+    color: #767373;
+}
+
+.sendComment {
+    border: none;
+    background-color: white;
+    transition: 0.2s;
+}
+
+.sendComment:hover {
+    transform: translateX(3px);
+    transition-timing-function: ease-in-out;
+    transition: 0.2s;
+    cursor: pointer;
+    border: none;
+}
+
+.sendComment img {
+    display: block;
+}
+
+.comBox {
+    width: 710px;
+    margin-top: -10px;
+    padding-right: 8px;
+    font-family: 'IBM Plex Serif', serif;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #b7b6b6;
+    border-radius: 5px;
+}
+
+.nameUser {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.photoCom {
+    margin: 10px;
+    width: 55px;
+    height: 55px;
+    border-width: 4px;
+    border-style: ridge;
+    border-color: #eeecec;
+}
+
+.userCom {
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 5px;
+    color: #885b81;
+}
+
+.comContent {
+    width: 710px;
+    justify-content: left;
+    font-size: 15px;
+    color: #5b4c5f;
+    padding-top: 10px;
+    line-height: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.comTime {
+    width: 710px;
+    justify-content: left;
+    color: #873e7c;
+    padding: 10px;
+    font-size: 14px
+}
+
+/*footer section */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    box-shadow: 2px 2px 12px 0px rgb(127, 126, 126);
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 8px;
+    padding-right: 15px;
+    clear: both;
+    width: 100%;
+}
+
+footer p {
+    color: rgb(74, 32, 76);
+    font-size: 16px;
+    padding-bottom: 13px;
+    font-family: monoton;
+}
+
+.copyRight {
+    font-weight: bold;
+}
+
+@media (max-width:480px) {
+    .copyRight {
+        font-size: 14px;
+        padding-bottom: 8px;
+    }
+}
+
+
+/* profile */
+
+.box1 {
+    height: fit-content;
+    background-color: white;
+    width: 460px;
+    color: rgb(114, 50, 117);
+    margin: 0 auto;
+}
+
+.box2 {
+    height: fit-content;
+    background-color: white;
+    max-width: 860px;
+    color: rgb(52, 3, 54);
+    margin: 0 auto;
+}
+
+#aboutYou {
+    padding-right: 590px;
+}
+
+.labelForm {
+    display: block;
+    text-align: left;
+    margin-bottom: -10px;
+    color: #5b4c5f;
+    font-size: larger;
+}
+
+.textForm {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#submit {
+    margin-left: 590px;
+}
+
+.postBox1 {
+    width: 230px;
+    text-align: left;
+}
+
+.addFriend {
+    border-style: none;
+    transition: .4s;
+    background-color: white;
+}
+
+.addFriend:hover {
+    transition: .4s;
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+.box2 p {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.nrFriends {
+    color: rgb(255, 0, 144);
+
+}
+
+.nrFriends1 {
+    color: rgb(255, 0, 144);
+    margin-left: 120px;
+}
+
+/* Settings */
+
+.boxSetting {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.line {
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+#titleSettings {
+    width: fit-content;
+    text-align: left;
+    padding-left: 200px;
+    color: rgb(109, 42, 113);
+}
+
+.description {
+    text-align: left;
+    padding-left: 200px;
+    color: #5b4c5f;
+}
+
+.changeBtn {
+    color: rgb(255, 0, 144);
+    padding-top: 60px;
+}
+
+.active,
+.changeBtn:hover {
+    cursor: pointer;
+    color: #5b4c5f;
+}
+
+.titleBox {
+    color: #5b4c5f;
+    text-align: left;
+}
+
+#fnbtn {
+    padding: 5px;
+    background-color: #5b4c5f;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.formular {
+    width: 600px;
+    display: none;
+    overflow: hidden;
+}
+
+.labels {
+    color: #5b4c5f;
+}
+
+.contentInput {
+    width: 270px;
+    padding: 5px;
+}
+
+.dissapear {
+    visibility: hidden;
+}
+
+
+/* my_friends */
+
+#friends {
+    height: fit-content;
+    background-color: white;
+    width: 460px;
+    color: rgb(114, 50, 117);
+    margin-left: 300px;
+}
+
+#headerFixed {
+    position: fixed;
+}
+
+.imageUser {
+    height: 100px;
+    width: 100px;
+
+}
+
+.photoUser {
+    height: 100px;
+    width: 100px;
+    padding-right: 150px;
+    margin-left: -200px;
+}
+
+.findUsers {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#titlePageFindFriends {
+    color: #8a417f;
+}
+
+.defineRol {
+    display: block;
+    margin-right: 150px;
+    margin-top: 20px;
+}
+
+.imgAvatar {
+    border-radius: 5px;
+}
+
+.seeProfileUser {
+    color: rgb(255, 0, 144);
+    padding-top: 60px;
+}
+
+.seeProfileUser:hover {
+    cursor: pointer;
+    color: #5b4c5f;
+}
+
+.modifyFriendship {
+    text-decoration: none;
+    margin-top: 50px;
+    padding: 3px;
+    font-size: 17px;
+    box-shadow: 2px 2px 12px 0px rgb(127, 126, 126);
+    color: rgb(143, 2, 129);
+    border-radius: 5px;
+}
+
+.modifyFriendship:hover {
+    background-color: #f7f1c7;
+    color: rgb(143, 2, 129);
+}
+
+.avatarUsers {
+    border-radius: 5px;
+}
+
+.editDelete1 {
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.editDelete1 a {
+    margin-right: 10px;
+}
+
+.seeComm {
+    margin-top: 10px;
+}
+
+/* Dropup Button */
+.dropbtn {
+    display: block;
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+/* The container <div> - needed to position the dropup content */
+.dropup {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropup content (Hidden by Default) */
+.dropup-content {
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    background-color: #f1f1f1;
+    width: 240px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+/* Links inside the dropup */
+.dropup-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropup links on hover */
+.dropup-content a:hover {
+    background-color: #ddd
+}
+
+/* Show the dropup menu on hover */
+.chatBox:hover .dropup-content {
+    display: block;
+}
+
+/* Change the background color of the dropup button when the dropup content is shown */
+.dropup:hover .dropbtn {
+    background-color: #2980B9;
+}
+
+/* Chat Section */
+
+.chatRooms {
+
+    background-color: #eeecec;
+    text-align: justify;
+    position: fixed;
+    right: 10px;
+    width: 240px;
+    bottom: 60px;
+    box-shadow: 2px 2px 12px 0px rgb(127, 126, 126);
+    border-radius: 8px;
+}
+
+.chatBox {
+    position: relative;
+    display: inline-block;
+    width: 240px;
+
+}
+
+.chatBox p {
+    height: 30px;
+    box-shadow: 2px 2px 12px 0px rgb(127, 126, 126);
+    text-align: center;
+    padding-top: 5px;
+    font-size: larger;
+    background-color: #eeecec;
+    color: rgb(136, 13, 108);
+    border-radius: 8px;
+    width: 240px;
+}
+
+.chatBox a {
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.chatBox div {
+    border-radius: 8px;
+}
+
+.chatBox p:hover {
+    background: linear-gradient(90deg, rgb(143, 2, 129) 0%, #bd68b3 45%, #e5da8c 100%);
+    color: white;
+    cursor: pointer;
+}
+
+.readMessage {
+    display: block;
+    margin-top: -20px;
+    padding-bottom: 10px;
+}
+
+.profiles {
+    color: rgb(52, 3, 54);
+    font-size: larger;
+}
+
+.userProfile {
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+.pagination {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    left: 42%;
+}
+
+.page-link {
+    width: 50px;
+}
+
+.page-item {
+    width: 50px;
+    list-style: none;
+}
+
+.likeIcon {
+    display: inline;
+}
+
+#like {
+    border-radius: 5px;
+}
+
+#numberOfLikes {
+    font-size: 14px;
+    color: #8a417f;
+}
+
+.notif-nr {
+    position: relative;
+    background-size: contain;
+    width: 43px
+}
+
+.notif {
+    width: 43px
+}
+
+.notif-img {
+    position: absolute;
+    width: 43px
+}
+
+.notif-img img {
+    position: absolute;
+    display: inline-block;
+}
+
+.counter1 {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 1);
+    width: 16px;
+    height: 18px;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 18px;
+    color: rgb(247, 173, 240);
+    font-family: 'Special Elite', cursive;
+    font-size: 13px;
+}
+
+.counter2 {
+    background-color: rgba(0, 0, 0, 1);
+    width: 16px;
+    height: 18px;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 18px;
+    color: rgb(247, 173, 240);
+    font-family: 'Special Elite', cursive;
+    font-size: 13px;
+}
+
+@media (max-width: 1000px) {
+    #section2 {
+        max-width: 960px;
+    }
+
+    .posts {
+        max-width: 960px;
+        margin-top: 20px;
+    }
+
+    .postsMessages {
+        max-width: 960px;
+    }
+
+    .boxSetting {
+        margin: 0;
+        padding: 0;
+        max-width: 960px;
+        justify-content: left;
+        margin-top: 20px;
+    }
+
+    .allUsers {
+        max-width: 960px;
+    }
+
+    .photoPost {
+        width: 120px;
+        height: 120px;
+    }
+
+    .image {
+        max-width: 110px;
+    }
+
+    .image img {
+        max-width: 110px;
+        border-radius: 3px;
+    }
+
+    .photoPosts {
+        width: 120px;
+        height: 120px;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .postBox {
+        width: 500px;
+        font-size: 12px;
+    }
+
+    .text {
+        font-size: 13px;
+        width: 490px;
+        line-height: 18px;
+    }
+
+    .country {
+        font-size: 16px;
+    }
+
+    .commentBox {
+        width: 490px;
+    }
+
+    #comment {
+        width: 400px;
+    }
+
+    .imageComment {
+        width: 45px;
+        height: 45px;
+    }
+
+    .imageComment img {
+        width: 38px;
+    }
+
+    form h2 {
+        font-size: 22px;
+        width: 600px;
+    }
+
+    form {
+        width: 600px;
+    }
+
+    .row {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+
+    .textForm {
+        width: 600px;
+    }
+
+    #aboutYou {
+        width: 600px;
+    }
+
+    #tv {
+        width: 500px;
+    }
+
+    .modifyFriendship {
+        text-decoration: none;
+        margin-top: 50px;
+        padding: 3px;
+        font-size: 14px;
+        box-shadow: 2px 2px 12px 0px rgb(127, 126, 126);
+        color: rgb(143, 2, 129);
+        border-radius: 5px;
+    }
+
+    .postBox1 {
+        max-width: 600px;
+    }
+
+    .text1 {
+        margin-left: 0px;
+        max-width: 600px;
+        height: min-content;
+        margin-top: 0px;
+        font-size: 16px;
+    }
+
+    .time3 {
+        font-size: 13px;
+        max-width: 440px;
+        margin-top: 20px;
+        padding: 0;
+        padding-bottom: 20px;
+        margin-left: 0px;
+    }
+
+    .postsMessages {
+        margin-right: 50px;
+        margin-left: 20px;
+
+    }
+
+    .postsMessages p {
+        font-size: 14px;
+
+    }
+
+    .text2 {
+        max-width: 450px;
+        min-height: 60px;
+        font-size: 16px;
+        color: #5b4c5f;
+        padding-top: 0px;
+        margin-bottom: -17px;
+        text-align: end;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .time2 {
+        font-size: 15px;
+        max-width: 500px;
+        margin-top: 20px;
+        padding: 0;
+        padding-bottom: 20px;
+        margin-left: 0px;
+    }
+
+    .postBox3 img{
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 600px) {
+    #section2 {
+        max-width: 580px;
+    }
+
+    .posts {
+        max-width: 560px;
+        margin-top: 20px;
+    }
+
+    .postsMessages {
+        max-width: 560px;
+    }
+
+    form h2 {
+        font-size: 22px;
+        width: 400px;
+    }
+
+    form {
+        width: 500px;
+    }
+
+    .row {
+        width: 500px;
+
+    }
+
+    .photoPost {
+        width: 80px;
+        height: 80px;
+    }
+
+    .image {
+        max-width: 70px;
+    }
+
+    .image img {
+        max-width: 70px;
+        border-radius: 3px;
+    }
+
+    .photoPosts {
+        width: 80px;
+        height: 80px;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .postBox {
+        width: 400px;
+        font-size: 12px;
+    }
+
+    .text {
+        font-size: 13px;
+        width: 390px;
+        line-height: 18px;
+    }
+
+    .userPost {
+        font-size: 17px;
+        padding: 3px;
+        max-width: 410px;
+        min-height: 50px;
+    }
+
+    .country {
+        font-size: 14px;
+    }
+
+    .commentBox {
+        width: 390px;
+    }
+
+    #comment {
+        width: 300px;
+    }
+
+    .imageComment {
+        width: 45px;
+        height: 45px;
+    }
+
+    .imageComment img {
+        width: 38px;
+    }
+
+    .textForm {
+        width: 500px;
+    }
+
+    #aboutYou {
+        width: 400px;
+    }
+
+    .friendBox {
+        width: 460px;
+    }
+
+    .photoUser {
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+        width: 90px;
+    }
+
+    .imageUser {
+        margin: 0;
+        margin-left: 5px;
+    }
+
+    .findUsers {
+        margin: 0;
+        padding: 0;
+        width: 460px;
+    }
+
+    .boxSetting {
+        margin: 0;
+        padding: 0;
+        max-width: 460px;
+        justify-content: left;
+        margin-top: 20px;
+    }
+
+    .allUsers {
+        width: 500px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    .friendBox ul {
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+    }
+
+    .friendBox ul li {
+        display: list-item;
+        text-align: left;
+        width: 460px;
+        list-style: none;
+    }
+
+    .avatarUsers {
+        width: 60px;
+        margin: 0;
+        padding: 0;
+    }
+
+    h3 {
+        margin-top: -20px;
+    }
+
+    .modifyFriendship {
+        text-decoration: none;
+        margin-top: 50px;
+        padding: 3px;
+        font-size: 13px;
+        box-shadow: 2px 2px 12px 0px rgb(127, 126, 126);
+        color: rgb(143, 2, 129);
+        border-radius: 5px;
+    }
+
+    .postBox1 {
+        max-width: 460px;
+    }
+
+    .text1 {
+        margin-left: -100px;
+        max-width: 440px;
+        height: min-content;
+        margin-top: 30px;
+        font-size: 16px;
+    }
+
+    .time3 {
+        font-size: 13px;
+        max-width: 440px;
+        margin-top: 20px;
+        padding: 0;
+        padding-bottom: 20px;
+        margin-left: -100px;
+    }
+
+    .postsMessages {
+        margin-right: 50px;
+        margin-left: 20px;
+
+    }
+
+    .postsMessages p {
+        font-size: 13px;
+
+    }
+
+    .text2 {
+        max-width: 300px;
+        min-height: 60px;
+        font-size: 15px;
+        color: #5b4c5f;
+        padding-top: 0px;
+        margin-bottom: -17px;
+        text-align: end;
+        
+    }
+
+    .time2 {
+        font-size: 13px;
+        max-width: 400px;
+        margin-top: 20px;
+        padding: 0;
+        padding-bottom: 20px;
+        
+    }
+
+    .postMessages {
+        margin: 0;
+        margin-right: 20px;
+        margin-left: 30px;
+    }
+
+    .postsMessages p {
+        font-size: 13px;
+
+    }
+
+    .postBox2 {
+        margin-left: 20px;
+    }
+
+    .postBox2 .text1 {
+        width: 260px;
+        font-size: 15px;
+        margin-left: 100px;
+    }
+
+    .postBox2 .time1 {
+        font-size: 13px;
+    }
+
+    #boodschap {
+        max-width: 220px;
+    }
+
+    #form {
+        margin-left: -20px;
+    }
+    #chat{
+        margin-left: 50px;
+    }
+    .postBox3 {
+        margin-top: 0px;
+        width: 350px;
+        margin-right: 30px;
+        margin-top: -3px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .photoPosts {
+        width: 80px;
+        height: 80px;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .postBox {
+        width: 400px;
+        font-size: 12px;
+    }
+
+    .postBox1 {
+        width: 100px;
+    }
+
+    .text {
+        font-size: 13px;
+        width: 390px;
+        line-height: 20px;
+    }
+
+    #section2 {
+        max-width: 460px;
+    }
+
+    .posts {
+        max-width: 460px;
+        margin-top: 20px;
+    }
+
+    .postsMessages {
+        max-width: 460px;
+    }
+
+    .allUsers {
+        max-width: 460px;
+        margin: 0;
+    }
+
+    form h2 {
+        font-size: 20px;
+        width: 300px;
+    }
+
+    form {
+        width: 400px;
+    }
+
+    .row {
+        width: 400px;
+    }
+
+    .textForm {
+        width: 500px;
+    }
+
+    .photoPost {
+        width: 70px;
+        height: 70px;
+        margin-left: 5px;
+    }
+
+    .image {
+        max-width: 60px;
+    }
+
+    .image img {
+        max-width: 60px;
+        border-radius: 3px;
+    }
+
+    .photoPosts {
+        width: 70px;
+        height: 70px;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .postBox {
+        width: 200px;
+        font-size: 12px;
+    }
+
+    .postBox1 {
+        width: 120px;
+    }
+
+    .text {
+        font-size: 13px;
+        width: 280px;
+        line-height: 18px;
+    }
+
+    .userPost {
+        padding: 3px;
+    }
+
+    .country {
+        font-size: 14px;
+    }
+
+    .commentBox {
+        width: 290px;
+    }
+
+    #comment {
+        width: 210px;
+    }
+
+    .imageComment {
+        width: 35px;
+        height: 35px;
+    }
+
+    .imageComment img {
+        width: 28px;
+
+    }
+
+    #aboutYou {
+        width: 400px;
+    }
+
+    .friendBox {
+        width: 460px;
+    }
+
+    .photoUser {
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+        width: 90px;
+    }
+
+    .imageUser {
+        margin: 0;
+        margin-left: 5px;
+    }
+
+    .findUsers {
+        margin: 0;
+        padding: 0;
+        width: 460px;
+    }
+
+    .boxSetting {
+        margin: 0;
+        padding: 0;
+        max-width: 460px;
+        justify-content: left;
+        margin-top: 20px;
+    }
+
+    .allUsers {
+        width: 400px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    .friendBox ul {
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+    }
+
+    .friendBox ul li {
+        text-align: left;
+        width: 460px;
+    }
+
+    .avatarUsers {
+        width: 60px;
+        margin: 0;
+        padding: 0;
+    }
+
+    h3 {
+        margin-top: -40px;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .modifyFriendship {
+        text-decoration: none;
+        margin-top: 50px;
+        padding: 3px;
+        font-size: 12px;
+        box-shadow: 2px 2px 12px 0px rgb(127, 126, 126);
+        color: rgb(143, 2, 129);
+        border-radius: 5px;
+    }
+
+    .postBox1 {
+        max-width: 460px;
+    }
+
+    .postsMessages {
+        margin-right: 50px;
+        margin-left: 20px;
+    }
+
+    .postsMessages p {
+        font-size: 13px;
+
+    }
+
+    .text1 {
+        margin-left: -100px;
+        max-width: 430px;
+        height: min-content;
+        margin-top: 10px;
+    }
+
+    .time3 {
+        font-size: 13px;
+        max-width: 440px;
+        margin-top: 20px;
+        padding: 0;
+        padding-bottom: 20px;
+        margin-left: -100px;
+    }
+
+    .text2 {
+        max-width: 300px;
+        min-height: 60px;
+        font-size: 15px;
+        color: #5b4c5f;
+        padding-top: 0px;
+        margin-bottom: -17px;
+        margin-left: 0px;
+        text-align: end;
+    }
+
+    .time2 {
+        font-size: 13px;
+        max-width: 300px;
+        margin-top: 20px;
+        padding: 0;
+        padding-bottom: 20px;
+        margin-left: 0px;
+    }
+    .postMessages {
+        margin: 0;
+        margin-right: 20px;
+        margin-left: 30px;
+    }
+
+    .postsMessages p {
+        font-size: 13px;
+    }
+
+    .postBox2 {
+        margin-left: 20px;
+    }
+
+    .postBox2 .text1 {
+        width: 270px;
+        font-size: 15px;
+        margin-left: 0px;
+    }
+
+    .postBox2 .time1 {
+        font-size: 13px;
+    }
+
+    #boodschap {
+        max-width: 220px;
+    }
+
+    #form {
+        margin-left: -20px;
+    }
+
+    .postMessages {
+        margin: 0;
+        margin-right: 20px;
+        margin-left: 30px;
+    }
+
+    .postsMessages p {
+        font-size: 13px;
+    }
+
+    .postBox2 {
+        margin-left: 20px;
+    }
+
+    .postBox2 .text1 {
+        width: 260px;
+        font-size: 15px;
+        margin-left: 0px;
+    }
+
+    .postBox2 .time1 {
+        font-size: 13px;
+
+    }
+
+    #boodschap {
+        max-width: 220px;
+    }
+
+    #form {
+        margin-left: -20px;
+    }
+    .postBox3{
+        margin-right: 0;
+    }
+    #chat{
+        margin-left: 100px;
+    }
+    #chat img{
+       margin-left: -40px;
+        margin-right: 50px;
+    }
+    #chat p{
+        margin-left: -40px;
+         margin-right: 50px;
+     }
+}
+
+@media (max-width: 460px) {
+
+    .userSection {
+        margin-left: -50px;
+    }
+
+    .photoPosts {
+        width: 70px;
+        height: 70px;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .postBox {
+        max-width: 370px;
+        font-size: 12px;
+    }
+
+    .text {
+        font-size: 13px;
+        max-width: 300px;
+        line-height: 20px;
+    }
+
+    #section2 {
+        max-width: 450px;
+    }
+
+    .posts {
+        max-width: 450px;
+        margin-top: 20px;
+    }
+
+
+    form h2 {
+        font-size: 20px;
+        width: 200px;
+    }
+
+    form {
+        width: 300px;
+    }
+
+    .row {
+        width: 300px;
+    }
+
+    .textForm {
+        width: 300px;
+    }
+
+    #aboutYou {
+        width: 300px;
+    }
+
+    .photoPost {
+        width: 70px;
+        height: 70px;
+        margin-left: 5px;
+    }
+
+    .image {
+        max-width: 60px;
+    }
+
+    .image img {
+        max-width: 60px;
+        border-radius: 3px;
+    }
+
+    .postBox {
+        max-width: 260px;
+        font-size: 12px;
+    }
+
+    .text {
+        font-size: 13px;
+        width: 250px;
+        line-height: 18px;
+    }
+
+    .userPost {
+        font-size: 17px;
+        padding: 3px;
+        max-width: 420px;
+    }
+
+    .country {
+        font-size: 14px;
+    }
+
+    .commentBox {
+        width: 250px;
+    }
+
+    #comment {
+        width: 170px;
+    }
+
+    .imageComment {
+        width: 35px;
+        height: 35px;
+    }
+
+    .imageComment img {
+        width: 28px;
+    }
+
+    .userName {
+        font-size: 16px;
+    }
+
+    .country {
+        font-size: 14px;
+    }
+
+    .labelForm {
+        font-size: 14px;
+    }
+
+    .profiles {
+        font-size: 14px;
+    }
+
+    .nrFriends1 {
+        font-size: 14px;
+    }
+
+    .userName {
+        font-size: 16px;
+    }
+
+    .friendsSection {
+        width: 300px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .friendBox {
+        width: 300px;
+    }
+
+    .photoUser {
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+        width: 90px;
+    }
+
+    .imageUser {
+        margin: 0;
+    }
+
+    .findUsers {
+        margin: 0;
+        padding: 0;
+        max-width: 460px;
+        margin-left: -50px;
+    }
+
+    .friendBox ul {
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+    }
+
+    .friendBox ul li {
+        display: list-item;
+        list-style: none;
+        text-align: left;
+        width: 300px;
+    }
+
+    .avatarUsers {
+        width: 60px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .boxSetting {
+        margin: 0;
+        padding: 0;
+        max-width: 460px;
+        justify-content: left;
+    }
+
+    .allUsers {
+        max-width: 460px;
+        margin-left: 5px;
+    }
+
+    .modifyFriendship {
+        text-decoration: none;
+        margin-top: 50px;
+        padding: 3px;
+        font-size: 12px;
+        box-shadow: 2px 2px 12px 0px rgb(127, 126, 126);
+        color: rgb(143, 2, 129);
+        border-radius: 5px;
+    }
+
+    .postBox1 {
+        max-width: 460px;
+    }
+
+    .text1 {
+        
+        height: min-content;
+        margin-top: 10px;
+    }
+
+    .time3 {
+        font-size: 13px;
+        max-width: 440px;
+        margin-top: 20px;
+        padding: 0;
+        padding-bottom: 20px;
+        margin-left: -100px;
+    }
+
+    .text2 {
+        max-width: 200px;
+        min-height: 60px;
+        font-size: 15px;
+        color: #5b4c5f;
+        padding-top: 0px;
+        margin-bottom: -17px;
+        margin-left: 50px;
+        text-align: end;
+    }
+
+    .time2 {
+        font-size: 13px;
+        max-width: 200px;
+        margin-top: 20px;
+        padding: 0;
+        padding-bottom: 20px;
+        margin-left: 50px;
+    }
+
+    .postsMessages p {
+        font-size: 13px;
+    }
+
+    .postMessages {
+        margin: 0;
+        margin-right: 20px;
+        margin-left: 30px;
+    }
+
+    .postsMessages p {
+        font-size: 13px;
+
+    }
+
+    .postBox2 {
+        margin-left: 20px;
+    }
+
+    .postBox2 .text1 {
+        width: 220px;
+        font-size: 15px;
+        margin-left: 0px;
+    }
+
+    .postBox2 .time1 {
+
+        font-size: 13px;
+
+    }
+
+    #boodschap {
+        max-width: 220px;
+    }
+
+    #form {
+        margin-left: -20px;
+    }
+    .postBox3{
+        margin-right: 0;
+    }
+    #chat{
+        margin-left: 100px;
+    }
+    #chat img{
+       margin-left: -40px;
+        margin-right: 50px;
+    }
+    #chat p{
+        margin-left: -40px;
+         margin-right: 50px;
+    }
+    .readMessage {
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 300px) {
+    main {
+        margin-left: 0px;
+    }
+
+    #section2 {
+        max-width: 260px;
+    }
+
+    .posts {
+        max-width: 260px;
+        margin-top: 20px;
+    }
+
+    #postContent {
+        max-width: 255px;
+        margin-left: 20px;
+    }
+
+    .postsMessages {
+        max-width: 260px;
+    }
+
+    .boxSetting {
+        margin: 0;
+        padding: 0;
+        max-width: 300px;
+        justify-content: left;
+    }
+
+    .allUsers {
+        max-width: 300px;
+        margin-left: 5px;
+    }
+
+    form h2 {
+        font-size: 20px;
+        width: 200px;
+    }
+
+    form {
+        width: 200px;
+    }
+
+    .row {
+        width: 200px;
+    }
+
+    .textForm {
+        width: 200px;
+    }
+
+    #aboutYou {
+        width: 200px;
+    }
+
+    .photoPosts {
+        width: 70px;
+        height: 70px;
+        margin-right: 10px;
+        font-size: 14px;
+    }
+
+    .postBox {
+        width: 200px;
+        font-size: 12px;
+    }
+
+    .postBox1 {
+        max-width: 140px;
+    }
+
+    .userName {
+        font-size: 16px;
+    }
+
+    .country {
+        font-size: 14px;
+    }
+
+    .labelForm {
+        font-size: 14px;
+    }
+
+    .profiles {
+        font-size: 14px;
+    }
+
+    .nrFriends1 {
+        font-size: 14px;
+    }
+
+    .text {
+        font-size: 13px;
+        width: 190px;
+        line-height: 18px;
+    }
+
+    .userPost {
+        padding: 3px;
+        max-width: 280px;
+        font-size: 16px;
+    }
+
+    .country {
+        font-size: 14px;
+    }
+
+    .commentBox {
+        width: 165px;
+    }
+
+    #comment {
+        width: 85px;
+    }
+
+    .imageComment {
+        width: 35px;
+        height: 35px;
+    }
+
+    .imageComment img {
+        width: 28px;
+    }
+
+    .box2 {
+        width: 200px;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
+
+    .friendsSection {
+        width: 260px;
+    }
+
+    .friendBox {
+        width: 260px;
+    }
+
+    .photoUser {
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+        width: 80px;
+    }
+
+    .imageUser {
+        margin: 0;
+    }
+
+    .findUsers {
+        margin: 0;
+        padding: 0;
+        max-width: 280px;
+    }
+
+    .friendBox ul {
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+    }
+
+    .friendBox ul li {
+        display: list-item;
+        list-style: none;
+        text-align: left;
+        width: 260px;
+    }
+
+    .avatarUsers {
+        width: 60px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .defineRol {
+        width: 20px;
+        font-size: 14px;
+    }
+
+    .modifyFriendship {
+        text-decoration: none;
+        margin-top: 50px;
+        padding: 3px;
+        font-size: 12px;
+        box-shadow: 2px 2px 12px 0px rgb(127, 126, 126);
+        color: rgb(143, 2, 129);
+        border-radius: 5px;
+    }
+
+    .userSection {
+        margin-left: 0px;
+    }
+
+    .messagesList {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .postBox1 {
+        max-width: 380px;
+    }
+
+    .postBox2{
+        margin-left: -50px;
+    }
+
+    .postBox2 .text1 {
+        margin-left: -150px;
+        max-width: 280px;
+        height: min-content;
+        margin-top: 10px;
+    }
+
+    .text2 {
+        max-width: 200px;
+        min-height: 60px;
+        font-size: 15px;
+        color: #5b4c5f;
+        padding-top: 0px;
+        margin-bottom: -17px;
+        margin-left: 20px;
+        text-align: end;
+    }
+
+    .time2 {
+        font-size: 13px;
+        max-width: 280px;
+        margin-top: 20px;
+        padding: 0;
+        padding-bottom: 20px;
+        margin-left: -60px;
+    }
+
+    .time3 {
+        font-size: 13px;
+        max-width: 280px;
+        margin-top: 20px;
+        padding: 0;
+        padding-bottom: 20px;
+        margin-left: -100px;
+    }
+
+    .postMessages {
+        margin: 0;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .postsMessages p {
+        font-size: 13px;
+
+    }
+
+    .postBox2 .text1 {
+        width: 170px;
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    .postBox2 .time1 {
+        font-size: 13px;
+        margin-left: 10px;
+    }
+
+    #boodschap {
+        max-width: 220px;
+    }
+
+    #form {
+        margin-left: -20px;
+    }
+    .postBox3{
+        margin-right: 0;
+    }
+    #chat{
+        margin-left: 100px;
+    }
+    #chat img{
+       margin-left: -40px;
+        margin-right: 50px;
+    }
+    #chat p{
+        margin-left: -40px;
+         margin-right: 50px;
+    }
+    
+}

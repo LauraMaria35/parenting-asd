@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 1920px;
+    text-align: center;
+    padding-top: 30px;
+} 
+
+.title {
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.title a {
+    text-decoration: none;
+}
+
+#logo img {
+    margin-left: 210px;
+}
+
+@media (max-width:480px) {
+    .title {
+        width: 300px;
+    }
+    #logo img {
+        margin-left: 111px;
+    }
+}
+
+h1 {
+    font-size: 48px;
+    color: rgb(142, 67, 146);
+    line-height: 24px;
+    font-family: monoton;
+    font-weight: 900;
+}
+
+h2 {
+    color: rgb(144, 115, 121);
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: rgb(144, 115, 121);
+    margin-top: 35px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+h3 a {
+    text-decoration: none;
+    color: rgb(255, 221, 0);
+}
+
+h4 {
+    font-size: 17px;
+    color: rgb(144, 115, 121);
+}
+
+h4 a {
+    text-decoration: none;
+    color: rgb(255, 106, 0);
+}
+
+h5 {
+    color: rgb(142, 67, 146);
+}
+
+h6 {
+    font-size: 14px;
+    color: rgb(93, 74, 78);
+}
+
+h6 a {
+    text-decoration: none;
+    color: rgb(255, 221, 0);
+}
+
+#signUpBox {
+    box-shadow: 1px 1px 10px 2px rgb(177, 177, 177);
+    background-color: white;
+    height: 420px;
+    width: 400px;
+    border-radius: 8px;
+    margin: 0 auto;
+    border-style: outset;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#signUpBox a {
+    text-decoration: none;
+}
+
+.signUpEmail {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: rgb(144, 115, 121);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+ 
+}
+
+.signUpEmail p {
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.signUpEmail img {
+    padding-top: 1px;
+}
+
+.emailIcon {
+    border-right: solid 2px white;
+    padding-right: 10px;
+}
+
+label {
+    clear: both;
+    float: left;
+    margin-right: 0.5em;
+    width: 100px;
+}
+
+input {
+    margin-bottom: 0.5em;
+    margin-right: 0.5em;
+}
+
+#forgot {
+    clear: both;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: .5em;
+    width: inherit;
+    text-align: center;
+    margin-left: 10px;
+}
+
+#forgot a {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    box-shadow: 2px 2px 12px 0px rgb(127, 126, 126);
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 8px;
+    padding-right: 15px;
+    clear: both;
+    position: fixed;
+    top: 93%;
+    width: 100%;
+}
+
+footer p {
+    color: rgb(142, 67, 146);
+    font-size: 16px;
+    padding-bottom: 13px;
+    font-family: monoton;
+}
+
+#copyRight {
+    font-weight: bold;
+}
+
+@media (max-width:480px) {
+    #copyRight {
+        font-size: 14px;
+        padding-bottom: 8px;
+    }
+}
+
+#logInButton {
+    width: 300px;
+    background-color: rgb(127, 126, 126);
+    color: white;
+    border-color: white;
+    padding-bottom: 3px;
+    padding-top: 1px;
+}
+
+
+/* for reset.tpl*/
+
+#signUpBox1 {
+    box-shadow: 1px 1px 10px 2px rgb(177, 177, 177);
+    background-color: white;
+    width: 360px;
+    border-radius: 8px;
+    margin: 0 auto;
+    border-style: outset;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: auto;
+}
+
+#signUpBox1 a {
+    text-decoration: none;
+}
+
+#signUpBox1 form {
+    height: 140px;
+
+}
+
+.form-control{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#logInButton{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#logInButton:hover{
+    background-color: rgb(255, 106, 0);
+color: white;
+}
